@@ -43,7 +43,7 @@ export async function POST(request: Request) {
     const enriched = await enrich(candidates)
 
     // 4. Rankea — se pasa el contexto completo con teamSize y scale
-    const results = rank(enriched, { ...signals, teamSize, scale })
+const results = rank(enriched, { ...signals, teamSize, scale, languages: languages ?? [], priorities: priorities ?? [] })
 
     // 5. Guarda en DB
     const analysis = await prisma.analyzer.create({
