@@ -1,0 +1,53 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Analyzer {
+  id          String   @id @default(cuid())
+  createdAt   DateTime @default(now())
+
+  projectType String
+  teamSize    String
+  scale       String
+  languages   String[]
+  priorities  String[]
+  description String?
+
+  signals      Json
+  stackResults StackResult[]
+}
+
+model StackResult {
+  id         String   @id @default(cuid())
+  analyzerId String
+  analyzer   Analyzer @relation(fields: [analyzerId], references: [id])
+
+  stackKey   String
+  score      Float
+  rank       Int
+
+  githubData Json?
+  npmData    Json?
+  cachedAt   DateTime @default(now())
+
+  @@index([stackKey])
+}
+
+model ApiCache {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  data      Json
+  expiresAt DateTime
+
+  @@index([key])
+}

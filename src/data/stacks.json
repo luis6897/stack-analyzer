@@ -1,0 +1,508 @@
+{
+  "stacks": [
+    {
+      "key": "nextjs-supabase",
+      "name": "Next.js + Supabase",
+      "description": "Full stack moderno con auth, base de datos y storage incluidos",
+      "difficulty": "beginner",
+      "projectType": ["web", "ecommerce", "saas"],
+      "languages": ["JavaScript", "TypeScript"],
+      "usedBy": ["Mozilla", "PwC", "Mobbin"],
+      "tags": {
+        "realtimeNeeded": true,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": true,
+        "fileStorage": true,
+        "multiTenant": true,
+        "mobileFirst": false,
+        "preferSimplicity": true
+      },
+      "github": ["vercel/next.js", "supabase/supabase"],
+      "npm": ["next", "@supabase/supabase-js"]
+    },
+    {
+      "key": "nextjs-prisma-postgres",
+      "name": "Next.js + Prisma + PostgreSQL",
+      "description": "Control total sobre la base de datos con un ORM tipado",
+      "difficulty": "intermediate",
+      "projectType": ["web", "ecommerce", "saas"],
+      "languages": ["JavaScript", "TypeScript"],
+      "usedBy": ["Vercel", "Loom", "Hashnode"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": true,
+        "fileStorage": false,
+        "multiTenant": true,
+        "mobileFirst": false,
+        "preferSimplicity": false
+      },
+      "github": ["vercel/next.js", "prisma/prisma"],
+      "npm": ["next", "prisma"]
+    },
+    {
+      "key": "nextjs-firebase",
+      "name": "Next.js + Firebase",
+      "description": "Ideal para apps que necesitan auth y realtime sin configurar servidor",
+      "difficulty": "beginner",
+      "projectType": ["web", "saas", "ecommerce"],
+      "languages": ["JavaScript", "TypeScript"],
+      "usedBy": ["Duolingo", "Trivago", "Splitwise"],
+      "tags": {
+        "realtimeNeeded": true,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": true,
+        "fileStorage": true,
+        "multiTenant": false,
+        "mobileFirst": true,
+        "preferSimplicity": true
+      },
+      "github": ["vercel/next.js", "firebase/firebase-js-sdk"],
+      "npm": ["next", "firebase"]
+    },
+    {
+      "key": "remix-postgres",
+      "name": "Remix + PostgreSQL",
+      "description": "Enfocado en web standards, excelente para apps con mucha interacción de formularios",
+      "difficulty": "intermediate",
+      "projectType": ["web", "ecommerce", "saas"],
+      "languages": ["JavaScript", "TypeScript"],
+      "usedBy": ["Shopify", "NASA", "Stripe"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": true,
+        "heavyCompute": false,
+        "authNeeded": true,
+        "fileStorage": false,
+        "multiTenant": true,
+        "mobileFirst": false,
+        "preferSimplicity": false
+      },
+      "github": ["remix-run/remix"],
+      "npm": ["@remix-run/node", "@remix-run/react"]
+    },
+    {
+      "key": "nextjs-trpc-prisma",
+      "name": "Next.js + tRPC + Prisma",
+      "description": "Type safety de extremo a extremo, ideal para equipos TypeScript",
+      "difficulty": "advanced",
+      "projectType": ["web", "saas"],
+      "languages": ["TypeScript"],
+      "usedBy": ["Cal.com", "Ping.gg"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": true,
+        "fileStorage": false,
+        "multiTenant": true,
+        "mobileFirst": false,
+        "preferSimplicity": false
+      },
+      "github": ["vercel/next.js", "trpc/trpc", "prisma/prisma"],
+      "npm": ["next", "@trpc/server", "prisma"]
+    },
+    {
+      "key": "sveltekit-pocketbase",
+      "name": "SvelteKit + PocketBase",
+      "description": "Extremadamente ligero, perfecto para proyectos personales o MVPs rápidos",
+      "difficulty": "beginner",
+      "projectType": ["web", "landing"],
+      "languages": ["JavaScript", "TypeScript"],
+      "usedBy": [],
+      "tags": {
+        "realtimeNeeded": true,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": true,
+        "fileStorage": true,
+        "multiTenant": false,
+        "mobileFirst": false,
+        "preferSimplicity": true
+      },
+      "github": ["sveltejs/kit", "pocketbase/pocketbase"],
+      "npm": ["@sveltejs/kit", "pocketbase"]
+    },
+    {
+      "key": "astro-static",
+      "name": "Astro + TailwindCSS",
+      "description": "El stack ideal para landing pages y sitios estáticos ultra rápidos",
+      "difficulty": "beginner",
+      "projectType": ["landing", "web"],
+      "languages": ["JavaScript", "TypeScript"],
+      "usedBy": ["Google", "Microsoft", "Netlify"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": false,
+        "fileStorage": false,
+        "multiTenant": false,
+        "mobileFirst": false,
+        "preferSimplicity": true
+      },
+      "github": ["withastro/astro"],
+      "npm": ["astro", "tailwindcss"]
+    },
+    {
+      "key": "nextjs-static",
+      "name": "Next.js + TailwindCSS",
+      "description": "Landing pages y sitios estáticos con el ecosistema de React",
+      "difficulty": "beginner",
+      "projectType": ["landing", "web"],
+      "languages": ["JavaScript", "TypeScript"],
+      "usedBy": ["Vercel", "Hashnode", "Loom"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": false,
+        "fileStorage": false,
+        "multiTenant": false,
+        "mobileFirst": false,
+        "preferSimplicity": true
+      },
+      "github": ["vercel/next.js"],
+      "npm": ["next", "tailwindcss"]
+    },
+    {
+      "key": "vite-react",
+      "name": "Vite + React + TailwindCSS",
+      "description": "El setup más rápido para landing pages con React sin complejidad de servidor",
+      "difficulty": "beginner",
+      "projectType": ["landing", "web"],
+      "languages": ["JavaScript", "TypeScript"],
+      "usedBy": ["Stackblitz", "Storybook"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": false,
+        "fileStorage": false,
+        "multiTenant": false,
+        "mobileFirst": false,
+        "preferSimplicity": true
+      },
+      "github": ["vitejs/vite", "facebook/react"],
+      "npm": ["vite", "react", "tailwindcss"]
+    },
+    {
+      "key": "hugo-netlify",
+      "name": "Hugo + Netlify",
+      "description": "Generador de sitios estáticos ultrarrápido, ideal para landings y blogs",
+      "difficulty": "beginner",
+      "projectType": ["landing"],
+      "languages": [],
+      "usedBy": ["Smashing Magazine", "Let's Encrypt", "1Password"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": false,
+        "fileStorage": false,
+        "multiTenant": false,
+        "mobileFirst": false,
+        "preferSimplicity": true
+      },
+      "github": ["gohugoio/hugo"],
+      "npm": []
+    },
+    {
+      "key": "react-native-firebase",
+      "name": "React Native + Firebase",
+      "description": "Apps móviles cross-platform con backend serverless y auth incluida",
+      "difficulty": "intermediate",
+      "projectType": ["mobile"],
+      "languages": ["JavaScript", "TypeScript"],
+      "usedBy": ["Facebook", "Shopify", "Discord"],
+      "tags": {
+        "realtimeNeeded": true,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": true,
+        "fileStorage": true,
+        "multiTenant": false,
+        "mobileFirst": true,
+        "preferSimplicity": true
+      },
+      "github": ["facebook/react-native", "firebase/firebase-js-sdk"],
+      "npm": ["react-native", "firebase"]
+    },
+    {
+      "key": "expo-supabase",
+      "name": "Expo + Supabase",
+      "description": "La forma más rápida de lanzar una app móvil con backend completo",
+      "difficulty": "beginner",
+      "projectType": ["mobile"],
+      "languages": ["JavaScript", "TypeScript"],
+      "usedBy": ["Expo", "Supabase"],
+      "tags": {
+        "realtimeNeeded": true,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": true,
+        "fileStorage": true,
+        "multiTenant": false,
+        "mobileFirst": true,
+        "preferSimplicity": true
+      },
+      "github": ["expo/expo", "supabase/supabase"],
+      "npm": ["expo", "@supabase/supabase-js"]
+    },
+    {
+      "key": "flutter-firebase",
+      "name": "Flutter + Firebase",
+      "description": "Apps móviles nativas con UI expresiva y backend serverless de Google",
+      "difficulty": "intermediate",
+      "projectType": ["mobile"],
+      "languages": ["Dart"],
+      "usedBy": ["Google", "Alibaba", "BMW"],
+      "tags": {
+        "realtimeNeeded": true,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": true,
+        "fileStorage": true,
+        "multiTenant": false,
+        "mobileFirst": true,
+        "preferSimplicity": false
+      },
+      "github": ["flutter/flutter", "firebase/firebase-js-sdk"],
+      "npm": ["firebase"]
+    },
+    {
+      "key": "fastapi-postgres",
+      "name": "FastAPI + PostgreSQL",
+      "description": "API REST moderna en Python con validación automática y alto rendimiento",
+      "difficulty": "intermediate",
+      "projectType": ["api"],
+      "languages": ["Python"],
+      "usedBy": ["Netflix", "Uber", "Microsoft"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": true,
+        "heavyCompute": false,
+        "authNeeded": true,
+        "fileStorage": false,
+        "multiTenant": true,
+        "mobileFirst": false,
+        "preferSimplicity": false
+      },
+      "github": ["tiangolo/fastapi"],
+      "npm": []
+    },
+    {
+      "key": "express-mongodb",
+      "name": "Express + MongoDB",
+      "description": "Stack clásico y flexible para APIs REST con esquema dinámico",
+      "difficulty": "beginner",
+      "projectType": ["api", "web"],
+      "languages": ["JavaScript", "TypeScript"],
+      "usedBy": ["LinkedIn", "Uber", "Ebay"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": true,
+        "fileStorage": false,
+        "multiTenant": false,
+        "mobileFirst": false,
+        "preferSimplicity": true
+      },
+      "github": ["expressjs/express", "mongodb/node-mongodb-native"],
+      "npm": ["express", "mongoose"]
+    },
+    {
+      "key": "nestjs-postgres",
+      "name": "NestJS + PostgreSQL",
+      "description": "Framework backend empresarial con arquitectura modular y DI integrado",
+      "difficulty": "advanced",
+      "projectType": ["api"],
+      "languages": ["TypeScript"],
+      "usedBy": ["Adidas", "Roche", "Capgemini"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": true,
+        "fileStorage": false,
+        "multiTenant": true,
+        "mobileFirst": false,
+        "preferSimplicity": false
+      },
+      "github": ["nestjs/nest"],
+      "npm": ["@nestjs/core", "@nestjs/common"]
+    },
+    {
+      "key": "go-fiber-postgres",
+      "name": "Go + Fiber + PostgreSQL",
+      "description": "APIs de altísimo rendimiento con mínimo consumo de recursos",
+      "difficulty": "advanced",
+      "projectType": ["api"],
+      "languages": ["Go"],
+      "usedBy": ["Google", "Dropbox", "Cloudflare"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": true,
+        "heavyCompute": true,
+        "authNeeded": true,
+        "fileStorage": false,
+        "multiTenant": true,
+        "mobileFirst": false,
+        "preferSimplicity": false
+      },
+      "github": ["gofiber/fiber"],
+      "npm": []
+    },
+    {
+      "key": "rust-actix-postgres",
+      "name": "Rust + Actix + PostgreSQL",
+      "description": "El stack de mayor rendimiento posible, ideal para sistemas críticos",
+      "difficulty": "advanced",
+      "projectType": ["api"],
+      "languages": ["Rust"],
+      "usedBy": ["Mozilla", "Cloudflare", "Discord"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": true,
+        "heavyCompute": true,
+        "authNeeded": false,
+        "fileStorage": false,
+        "multiTenant": false,
+        "mobileFirst": false,
+        "preferSimplicity": false
+      },
+      "github": ["actix/actix-web"],
+      "npm": []
+    },
+    {
+      "key": "django-postgres",
+      "name": "Django + PostgreSQL",
+      "description": "Framework Python batteries-included, ideal para MVPs y apps empresariales",
+      "difficulty": "intermediate",
+      "projectType": ["web", "api", "ecommerce"],
+      "languages": ["Python"],
+      "usedBy": ["Instagram", "Pinterest", "Disqus"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": false,
+        "heavyCompute": false,
+        "authNeeded": true,
+        "fileStorage": true,
+        "multiTenant": true,
+        "mobileFirst": false,
+        "preferSimplicity": true
+      },
+      "github": ["django/django"],
+      "npm": []
+    },
+    {
+      "key": "python-fastapi-ml",
+      "name": "FastAPI + PyTorch + PostgreSQL",
+      "description": "Stack ideal para APIs con modelos de machine learning integrados",
+      "difficulty": "advanced",
+      "projectType": ["api", "ml"],
+      "languages": ["Python"],
+      "usedBy": ["OpenAI", "Hugging Face", "Stability AI"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": false,
+        "heavyCompute": true,
+        "authNeeded": false,
+        "fileStorage": true,
+        "multiTenant": false,
+        "mobileFirst": false,
+        "preferSimplicity": false
+      },
+      "github": ["tiangolo/fastapi", "pytorch/pytorch"],
+      "npm": []
+    },
+    {
+      "key": "jupyter-sklearn",
+      "name": "Jupyter + Scikit-learn + Pandas",
+      "description": "El stack estándar para análisis de datos y machine learning clásico",
+      "difficulty": "intermediate",
+      "projectType": ["ml", "data"],
+      "languages": ["Python"],
+      "usedBy": ["NASA", "Spotify", "JP Morgan"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": false,
+        "heavyCompute": true,
+        "authNeeded": false,
+        "fileStorage": true,
+        "multiTenant": false,
+        "mobileFirst": false,
+        "preferSimplicity": true
+      },
+      "github": ["scikit-learn/scikit-learn", "pandas-dev/pandas"],
+      "npm": []
+    },
+    {
+      "key": "terraform-aws",
+      "name": "Terraform + AWS",
+      "description": "Infraestructura como código para despliegues en la nube más usada del mundo",
+      "difficulty": "advanced",
+      "projectType": ["devops"],
+      "languages": [],
+      "usedBy": ["Airbnb", "Slack", "Twitch"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": false,
+        "heavyCompute": true,
+        "authNeeded": false,
+        "fileStorage": true,
+        "multiTenant": true,
+        "mobileFirst": false,
+        "preferSimplicity": false
+      },
+      "github": ["hashicorp/terraform"],
+      "npm": []
+    },
+    {
+      "key": "docker-kubernetes",
+      "name": "Docker + Kubernetes",
+      "description": "Containerización y orquestación para aplicaciones escalables en producción",
+      "difficulty": "advanced",
+      "projectType": ["devops"],
+      "languages": ["Go"],
+      "usedBy": ["Google", "Spotify", "Zalando"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": true,
+        "heavyCompute": true,
+        "authNeeded": false,
+        "fileStorage": false,
+        "multiTenant": true,
+        "mobileFirst": false,
+        "preferSimplicity": false
+      },
+      "github": ["kubernetes/kubernetes", "docker/compose"],
+      "npm": []
+    },
+    {
+      "key": "spring-boot-postgres",
+      "name": "Spring Boot + PostgreSQL",
+      "description": "El stack empresarial Java más usado, robusto y con ecosistema maduro",
+      "difficulty": "advanced",
+      "projectType": ["api", "web"],
+      "languages": ["Java"],
+      "usedBy": ["Amazon", "Netflix", "LinkedIn"],
+      "tags": {
+        "realtimeNeeded": false,
+        "latencyCritical": true,
+        "heavyCompute": false,
+        "authNeeded": true,
+        "fileStorage": false,
+        "multiTenant": true,
+        "mobileFirst": false,
+        "preferSimplicity": false
+      },
+      "github": ["spring-projects/spring-boot"],
+      "npm": []
+    }
+  ]
+}
